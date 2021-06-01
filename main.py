@@ -6,8 +6,6 @@ from typing import Any, Callable, List
 from jobs import job_1, job_2
 from utils import setup_logging
 
-from threading import Thread
-
 
 setup_logging()
 
