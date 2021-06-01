@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    cronjob:
+        container_name: cronjob
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: cronjob-docker:latest
+        command: python main.py
+        volumes:
+            - .:/app
